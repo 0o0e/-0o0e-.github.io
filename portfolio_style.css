@@ -1,0 +1,116 @@
+html{
+	font-family: verdana;
+	font-size: 20px;
+}
+
+
+
+body{
+	background-color: rgb(8, 29, 29);
+}
+
+#sub *{
+	background-color:rgb(168, 165, 165);
+}
+
+
+
+#elem1{
+	/* padding: 40px; */
+	/* margin: 40px; */
+	/* margin-top: 190px; */
+
+	font-size: 250px;
+
+}
+span {
+	/* display: inline-block; */
+	margin: 70px;
+	font-size: 40px;
+}
+
+p{
+	font-size: 35px;
+}
+
+.text_box {
+	background-color: rgb(231, 224, 224);
+	width: auto;
+	height: auto;
+	padding: 10px;
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	border-radius: 35px;
+}
+.text_box p{
+	margin-left: 30px;
+
+}
+
+.list_educations {
+	padding-top: 20px;
+	background-color: rgb(236, 238, 241);
+	/* border-radius: 35px; */
+	margin-top: 50px;
+	/* margin-left: 50px; */
+	margin-right: -50px;
+}
+
+.container_text_box_ed h1, h3,h2, h4{
+	margin: 20px;
+	margin-top: 40px;
+	margin-left: 30px;
+	
+}
+.container_text_box_ed p{
+	margin: 20px;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.container_text_box_ed {
+	background-color: rgb(231, 224, 224);
+	width: auto;
+	height: auto;
+	padding: 10px;
+
+}
+
+#software_image{
+	margin-top: 20px;
+}
+
+header nav {
+	float: left;
+}
+
+header nav ul li {
+	display:grid;
+	margin-top: 3%;
+}
+header nav ul li a {
+	color: #444444;
+	font-weight: bold;
+	display: block;
+}
+header nav ul li:last-child a {
+	text-transform: uppercase;
+	float:unset;
+}
+
+.list_links{
+	text-align: center;
+	background-color: #ecdfdf;
+	width: auto;
+	height: auto;
+	padding-top: 25px;
+}
+
+.text_box_work{
+	padding-top: 20px;
+	background-color: rgb(231, 224, 224);
+	margin-top: 50px;
+	margin-right: -10px;
+	padding-bottom: 20px;
+
+}
