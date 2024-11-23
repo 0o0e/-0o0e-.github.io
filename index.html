@@ -1,115 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">  
-	<head>
-		<meta charset="UTF-8">
-		<title>portfolio</title>
-		<link rel="stylesheet" type="text/css" href="portfolio_style.css"></style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="portfolio_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <section id="home" class="section home">
+        <div class="content">
+            <h1 class="fade-in">Portfolio</h1>
+            <p class="fade-in">testingggggg.</p>
+        </div>
+    </section>
 
-	</head>
-<!-- test -->
+    <section id="about" class="section about">
+        <h2 class="fade-up">About Me</h2>
+        <p class="fade-up">testtetsttetsttstst</p>
+    </section>
 
-	<body>
-		<header>
-			<div class="row">
-				<div class="col-sm-9">
-					
-					<span class="margin font-weight-bold" style="color: #1b1e23; ">Esmanur Kilic</span>
-					</span>
-				
-			</div>
-					
-			<nav class="container-fluid">
-				<ul class="container-fluid row">
-					<li class="nav-item col-4 col-sm-3">
-						<a href= "index.html"> HOME </a> 
-					</li>
-					<li class="nav-item col-3 col-sm-3">
-						<a href= "opleiding.html"> EDUCATION </a> 
-					</li>
-					<li class="nav-item col-3 col-sm-3">
-						<a href= "werk.html"> WORK </a> 
-					</li>
-					<li class="nav-item col-2 col-sm-3">
-						<a href="links.html"> LINKS </a> 
-					</li>
-				</ul>
-			</nav>
+    <section id="portfolio" class="section portfolio">
+        <h2 class="fade-left">My Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item slide-up">
+                <img src="" alt="Project 1">
+                <h3>aaa</h3>
+                <p>more test</p>
+            </div>
+            <div class="portfolio-item slide-up">
+                <img src="" alt="Project 2">
+                <h3>bbb</h3>
+                <p>tetsttt</p>
+            </div>
+            <div class="portfolio-item slide-up">
+                <img src="" alt="Project 3">
+                <h3>ccc</h3>
+                <p>aaaa</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="skills" class="section skills">
+        <h2 class="fade-in">Skills</h2>
+        <ul class="skills-list fade-in">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>PHP & Laravel</li>
+            <li>Responsive Design</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
 
+    <section id="contact" class="section contact">
+        <h2 class="fade-in">Contact Me</h2>
+        <p class="fade-in">Feel free to reach out!</p>
+        <form id="contact-form" class="fade-up">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="response-message"></div>
+    </section>
 
+    <footer class="footer">
+        <p>&copy; meow.</p>
+    </footer>
 
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
 
+		emailjs.init("uZodCYEf56WUCcaXm"); 
 
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
 
-		</header>
-<!-- 		
-		<div id = "bovenkant" class="container-fluid">
-			<div id="elem1" class = "col-xs-5 col-md-5 offset-md-0">Esmanur Kilic</div> 
-		</div> -->
-
-
-
-		
-		<div class="text_box">
-			<div class="container-fluid mt-3">
-					<h1 style="color: #000000; ">about me:</h1>
-					<p> 
-						My name is Esma Kilic and I am 16 years old. I study software development at davinci college. I chose this course because it seemed interesting to me and I wanted to learn how to build and design websites and apps.
-					</p>
-			</div>
-		</div>
-
-		<div class="list_educations">
-			<div class="container-fluid mt-3">
-			<h2>my educations: </h2>
-				<ul>
-					<li>
-						<p>September 2018 - July 2022</p>
-						<p>Mavo TL, Dalton Kapteynweg</p>
-					</li>
-					<li>
-						<p>September 2022 - ...</p>
-						<p>Mbo 4, Software Development, Da Vinci Leerpark
-							<br><br>
-						</p>
-					</li>
-				</ul>
-			</div>
-
-		</div>
-
-
-
-		
-
-						
-		<div class="container-fluid">
-			<h3>my contact information: </h3>
-			<div class="col-sm-12">
-				<i class="bi bi-geo-alt" style="font-size: 50px; color:black;"></i>
-				<span style="color: #485363; "> Dordrecht,
-					Riouwstraat 130,
-					3312XN</span>
-			</div>
-			<div class="col-sm-12">
-				<i class="bi bi-envelope" style="font-size: 50px; color:black;"></i>
-				<span style="color: #485363; "> 99072495@mydavinci.nl</span>
-			</div>
-			<div class="col-sm-12">
-				<i class="bi bi-telephone" style="font-size: 50px; color:black;"></i>
-				<span style="color: #485363; "> +31628294457 </span>
-				</span>
-				
-			</div>
-
-		</div>
+            const form = event.target;
+			const formData = {
+				name: form.name.value,
+				email: form.email.value,
+				message: form.message.value,
+				reply_to: form.email.value 
+			};
 
 
-	
-	</body>
+			emailjs.send("service_ifjf0ak", "template_mjntu78", formData)
+        .then(function(response) {
+            document.getElementById("response-message").innerHTML = "<p>Thank you for your message! We'll get back to you soon.</p>";
+            form.reset(); 
+        })
+                .catch(function(error) {
+                    document.getElementById("response-message").innerHTML = "<p>There was an error sending your message. Please try again.</p>";
+                });
+        });
 
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeInElements = document.querySelectorAll('.fade-in, .fade-up, .fade-left, .slide-up');
 
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeInElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
 </html>
